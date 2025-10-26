@@ -1,0 +1,75 @@
+{
+  "position": "top",
+  "output": "DP-3",
+  "margin-bottom": -15,
+  "spacing": 0,
+
+  "modules-left": ["clock", "network"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["hyprland/window", "pulseaudio"],
+
+  "window": {
+    "format": "{title}",
+    "max-length": 50,
+  },
+
+  "clock": {
+    "interval": 1,
+    "timezone": "Europe/Madrid",
+    "format": "{:%H:%M:%S}",
+    "tooltip": true,
+    "tooltip-format": "{:L%Y / %m / %d }",
+  },
+
+  "network": {
+    "format-wifi": " 󰤨 {essid} ",
+    "format-ethernet": " Wired ",
+    "tooltip-format": "<span color='#FF1493'> 󰅧 </span>{bandwidthUpBytes}  <span color='#00BFFF'> 󰅢 </span>{bandwidthDownBytes}",
+    "format-linked": " 󱘖 {ifname} (No IP) ",
+    "format-disconnected": "  Disconnected ",
+    "format-alt": " 󰤨 {signalStrength}% ",
+    "interval": 1,
+  },
+
+  "pulseaudio": {
+    "format": "{icon}{volume}% ",
+    "format-muted": " 󰖁 0% ",
+    "format-icons": {
+      "headphone": "  ",
+      "hands-free": "  ",
+      "headset": "  ",
+      "phone": "  ",
+      "portable": "  ",
+      "car": "  ",
+      "default": ["  ", "  ", "  "],
+    },
+    "on-click-right": "pavucontrol -t 3",
+    "on-click": "pactl -- set-sink-mute 0 toggle",
+    "on-click-middle": "pavucontrol",
+    "scroll-step": 2,
+    "smooth-scrolling-threshold": 1,
+    "on-scroll-up": "dasdas",
+    "on-scroll-down": "dasdsa",
+    "tooltip": true,
+    "tooltip-format": "当前系统声音: {volume}%",
+  },
+
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "format": "{icon}",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+    },
+    "persistent-workspaces": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+    },
+  },
+}

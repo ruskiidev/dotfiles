@@ -1,0 +1,76 @@
+/* --- Global Styles --- */
+* {
+    font-family: "Cascadia Code NF";
+    font-size: 14px;
+}
+
+window#waybar {
+    background: transparent; 
+    color: rgba(192, 202, 245, 1);
+}
+
+#workspaces {
+    background: rgba(36, 40, 59, 1);
+    border-radius: 5px;
+    margin: 6px 5px;
+    border-bottom: 2px solid #73daca;
+}
+
+#workspaces button:hover {
+    border: 0px transparent;
+    border-radius: 5px;
+    background: rgba(36, 40, 59, 1);
+}
+
+#workspaces button.active {
+    color: #73daca;
+}
+
+#clock {
+    background: rgba(36, 40, 59, 1);
+    border-radius: 10px;
+    margin: 6px 5px;
+    margin-right: 20px;
+    padding: 5px 20px 5px 20px;
+
+    margin-left: 20px;
+
+    border-radius: 5px;
+
+    border-bottom: 2px solid #7aa2f7;
+}
+
+#pulseaudio {
+    background: rgba(36, 40, 59, 1);
+    border-radius: 5px;
+    margin: 6px 5px;
+    margin-right: 20px;
+    padding: 5px 20px 5px 20px;
+
+    border-bottom: 2px solid #f7768e;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+    border: none;
+}
+
+#window {
+    background: rgba(36, 40, 59, 1);
+    border-radius: 5px;
+    margin: 6px 5px;
+    margin-right: 20px;
+    padding: 5px 20px 5px 20px;
+
+    border-bottom: 2px solid #ff9e64;
+}
+
+#network {
+    background: rgba(36, 40, 59, 1);
+    border-radius: 5px;
+    margin: 6px 5px;
+    margin-right: 20px;
+    padding: 5px 20px 5px 20px;
+
+    border-bottom: 2px solid #bb9af7;
+}
